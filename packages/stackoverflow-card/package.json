@@ -1,6 +1,6 @@
 {
   "name": "@social-cards/stackoverflow-card",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Silvelo <arturo.silvelo@gmail.com>",
   "homepage": "",
@@ -17,5 +17,5 @@
     "tsc": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "21e3d9b0f167b36be65720681df9c499709c9475"
+  "gitHead": "8a0e3dbea69011fe269e3e5642cce00e64ff512c"
 }
