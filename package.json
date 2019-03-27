@@ -3,7 +3,7 @@
   "private": false,
   "scripts": {
     "compile": "lerna run tsc",
-    "publish": "lerna run tsc && lerna publish -- --access public"
+    "publish": "lerna run tsc && lerna publish"
   },
   "dependencies": {
     "@polymer/iron-flex-layout": "^3.0.1",
