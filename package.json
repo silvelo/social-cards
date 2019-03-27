@@ -1,14 +1,10 @@
 {
-  "name": "social-cards",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "root",
+  "private": true,
   "scripts": {
     "compile": "lerna run tsc",
     "publish": "lerna run tsc && lerna publish"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@polymer/iron-flex-layout": "^3.0.1",
     "@webcomponents/webcomponentsjs": "^2.2.7",
