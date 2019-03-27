@@ -1,0 +1,25 @@
+{
+  "name": "social-cards",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "lerna run tsc",
+    "publish": "lerna run tsc && lerna publish"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@polymer/iron-flex-layout": "^3.0.1",
+    "@webcomponents/webcomponentsjs": "^2.2.7",
+    "lit-element": "^2.1.0"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.1",
+    "polymer-cli": "^1.9.7",
+    "prpl-server": "^1.4.0",
+    "ts-lit-plugin": "^0.1.8",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000"
+  }
+}

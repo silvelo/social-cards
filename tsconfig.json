@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "sourceMap": true,
+    "noLib": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "plugins": [{
+      "name": "typescript-lit-html-plugin",
+      "tags": [
+        "html",
+        "template"
+      ],
+      "format": {
+        "enabled": true
+      }
+    }]
+  }
+}
