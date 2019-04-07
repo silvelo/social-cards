@@ -1,6 +1,7 @@
 import {
     LitElement, html, customElement, property, css
 } from 'lit-element';
+import './github-card-classes';
 
 @customElement('github-card')
 export class GithubCard extends LitElement {
@@ -15,7 +16,6 @@ export class GithubCard extends LitElement {
         this.userId = '';
         this.change = false;
         this._getData();
-        /* this._getStarts(); */
     }
 
     static get styles() {
@@ -84,6 +84,8 @@ export class GithubCard extends LitElement {
     render() {
         if (Object.keys(this.githubUser).length !== 0) {
             return html`
+            <style is="custom-style" include="github-card"></style>
+
             <div class="card" @click="${this._navigate}">
                 <div class="card-header">
                     <img src="${this.githubUser.avatar_url}" class="avatar" alt="Avatar">
@@ -100,7 +102,7 @@ export class GithubCard extends LitElement {
                         <span>${this.githubUser.public_repos}</span>
                     </div>
                     <div class="data">
-                        <strong>Repos</strong>
+                        <strong>Stars</strong>
                         <span>${this.stars}</span>
                     </div>
                 </div>
@@ -118,6 +120,7 @@ export class GithubCard extends LitElement {
     private async _getData() {
         await this.updateComplete;
         try {
+            await this._getStarts()
             let response = await fetch(`${this._apiUrl}${this.userId}`);
             this.githubUser = await response.json() as GithubResponse;
             this.change = !this.change;
@@ -126,14 +129,14 @@ export class GithubCard extends LitElement {
         }
     }
 
-    /*     private async _getStarts() {
+        private async _getStarts() {
             let response = await fetch(`${this._apiUrl}${this.userId}/repos`);
             let data = await response.json() as any[];
-            this.starts = data.reduce(
+            this.stars = data.reduce(
                 (previous, current) => previous + current.stargazers_count, 0
             )
     
-        } */
+        }
 
 }
 

@@ -1,11 +1,20 @@
 # `github-card`
 
-> TODO: description
+Basic card for display github information
 
 ## Usage
 
+```bash
+npm install --save @social-cards/github-card
 ```
-const githubCard = require('github-card');
 
-// TODO: DEMONSTRATE API
+
+```javascript
+<script type="module" import '@social-cards/github-card/lib/github-card.js'> </script>
 ```
+
+```html
+<github-card userId=""></github-card>
+```
+
+The userId is your github username
