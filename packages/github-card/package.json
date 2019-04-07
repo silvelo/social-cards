@@ -1,7 +1,7 @@
 {
   "name": "@social-cards/github-card",
   "version": "0.0.2-alpha.0",
-  "description": "> TODO: description",
+  "description": "Github Card",
   "author": "Silvelo <arturo.silvelo@gmail.com>",
   "homepage": "",
   "license": "ISC",
@@ -17,6 +17,15 @@
     "tsc": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/silvelo/social-cards"
+  },
+  "keywords": [
+    "github",
+    "card",
+    "web-component"
+  ],
   "publishConfig": {
     "access": "public"
   },

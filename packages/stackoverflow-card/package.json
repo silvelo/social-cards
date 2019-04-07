@@ -1,7 +1,7 @@
 {
   "name": "@social-cards/stackoverflow-card",
   "version": "0.0.2-alpha.0",
-  "description": "> TODO: description",
+  "description": "Stackoverflow Card",
   "author": "Silvelo <arturo.silvelo@gmail.com>",
   "homepage": "",
   "license": "ISC",
@@ -20,5 +20,14 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/silvelo/social-cards"
+  },
+  "keywords": [
+    "stackoverflow",
+    "card",
+    "web-component"
+  ],
   "gitHead": "8a0e3dbea69011fe269e3e5642cce00e64ff512c"
 }
