@@ -1,7 +1,8 @@
 {
   "name": "@social-cards/stackoverflow-card",
-  "version": "0.0.2",
-  "description": "Stackoverflow Card",
+
+  "version": "0.0.2-alpha.0",
+  "description": "> TODO: description",
   "author": "Silvelo <arturo.silvelo@gmail.com>",
   "homepage": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
   "publishConfig": {
     "access": "public"
   },
+
   "repository": {
     "type": "git",
     "url": "https://github.com/silvelo/social-cards"
