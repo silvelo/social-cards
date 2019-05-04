@@ -1,0 +1,85 @@
+/** Core CSS required for ionic components to work property */
+@import "~@ionic/core/css/core.css";
+
+/** Basic CSS for apps built with Ionic */
+@import "~@ionic/core/css/normalize.css";
+@import "~@ionic/core/css/structure.css";
+@import "~@ionic/core/css/typography.css";
+
+/** Optional CSS utils that can be commented out */
+@import "~@ionic/core/css/padding.css";
+@import "~@ionic/core/css/float-elements.css";
+@import "~@ionic/core/css/text-alignment.css";
+@import "~@ionic/core/css/text-transformation.css";
+@import "~@ionic/core/css/flex-utils.css";
+
+:host {
+  --swc-background-color: white;
+  --swc-border-width: 2px;
+  --swc-border-type: solid;
+  --swc-border-color: black;
+  --swc-border-radius: 15px;
+  --swc-width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration:none;
+  cursor:inherit;
+}
+
+.box {
+  color:inherit;
+  background-color: var(--swc-background-color);
+  border: var(--swc-border-width) var(--swc-border-type) var(--swc-border-color);
+  border-radius: var(--swc-border-radius);
+  width: var(--swc-width);
+}
+
+.border-top{
+  border-top: 1px solid var(--swc-border-color);
+}
+
+span::before{
+  content:"\A";
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  display:inline-block;
+  margin:0 10px;
+}
+
+.gold::before {
+  background-color: #FFCC01;
+}
+
+.gold {
+  color:#cda400;
+}
+
+.silver::before {
+  background-color: #B4B8BC;
+}
+
+.silver {
+  color:#8c9298;
+}
+
+.bronze::before {
+  background-color: #D1A684;
+}
+
+.bronze {
+  color:#c38b5f;
+}
+
+.reputation {
+  font-size: 24px;
+  font-weight: bold;
+}

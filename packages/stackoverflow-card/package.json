@@ -1,33 +1,26 @@
 {
-  "name": "@social-cards/stackoverflow-card",
-  "version": "0.0.2",
-  "description": "> TODO: description",
-  "author": "Silvelo <arturo.silvelo@gmail.com>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "lib/stackoverflow-card.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "name": "stackoverflow-card",
+  "version": "0.0.1",
+  "description": "Stackoverflow card info",
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "unpkg": "dist/ionic.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
   "files": [
-    "lib"
+    "dist/"
   ],
   "scripts": {
-    "tsc": "tsc",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
   },
-  "publishConfig": {
-    "access": "public"
+  "dependencies": {
+    "@ionic/core": "^4.3.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/silvelo/social-cards"
+  "devDependencies": {
+    "@stencil/core": "~0.16.2"
   },
-  "keywords": [
-    "stackoverflow",
-    "card",
-    "web-component"
-  ],
-  "gitHead": "8a0e3dbea69011fe269e3e5642cce00e64ff512c"
+  "license": "MIT"
 }
