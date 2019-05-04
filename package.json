@@ -12,11 +12,18 @@
     "lit-element": "^2.1.0"
   },
   "devDependencies": {
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
     "lerna": "^3.13.1",
     "polymer-cli": "^1.9.7",
     "prpl-server": "^1.4.0",
     "ts-lit-plugin": "^0.1.8",
     "tslint": "^5.14.0",
     "typescript": "^3.3.4000"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
