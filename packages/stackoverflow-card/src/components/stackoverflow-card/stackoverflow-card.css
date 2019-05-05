@@ -14,6 +14,14 @@
 @import "~@ionic/core/css/flex-utils.css";
 
 :host {
+  /**
+ * @prop --swc-background-color: Background of the card
+ * @prop --swc-border-width: Width of the border line
+ * @prop --swc-border-type: Type of the border line
+ * @prop --swc-border-color: Color of the border line
+ * @prop --swc-border-radius: Radius of the card
+ * @prop --swc-width: Width of the card
+ */
   --swc-background-color: white;
   --swc-border-width: 2px;
   --swc-border-type: solid;

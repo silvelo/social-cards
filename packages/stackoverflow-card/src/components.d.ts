@@ -13,9 +13,15 @@ import '@ionic/core';
 export namespace Components {
 
   interface SwcStackoverflowCard {
+    /**
+    * (required) The user id to display
+    */
     'userId': string;
   }
   interface SwcStackoverflowCardAttributes extends StencilHTMLAttributes {
+    /**
+    * (required) The user id to display
+    */
     'userId'?: string;
   }
 }

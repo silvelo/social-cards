@@ -8,6 +8,7 @@ import { StackoverflowService } from '../../utils/stackoverflow.service';
   shadow: true
 })
 export class StackoverflowCard {
+  /** (required) The user id to display */
   @Prop() userId: string;
   user: IUser;
   dataService = StackoverflowService.getInstance();
